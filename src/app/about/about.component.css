@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+    color: white;
+    margin: .7em;
+  }
+  
+  button {
+    background-color: #1d19df;
+    border: solid 3px #5660eb;
+    border-radius: 10%;
+  }
