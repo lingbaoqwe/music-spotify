@@ -54,7 +54,13 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: InterceptTokenService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
